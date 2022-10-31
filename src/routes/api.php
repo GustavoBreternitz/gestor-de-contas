@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 // Record Routes
 Route::get('/create-record', [App\Http\Controllers\Api\RecordController::class, 'create'])->name('create.record');
+Route::get('/list-records', [App\Http\Controllers\Api\RecordController::class, 'list'])->name('list.record');

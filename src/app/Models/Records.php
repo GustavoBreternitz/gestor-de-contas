@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
-class Records
+use Illuminate\Database\Eloquent\Model;
+
+class Records extends Model
 {
     protected $table = 'records';
 
