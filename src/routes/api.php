@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Record Routes
-Route::get('/create-record', [App\Http\Controllers\Api\RecordController::class, 'create'])->name('create.record');
+Route::post('/create-record', [App\Http\Controllers\Api\RecordController::class, 'create'])->name('create.record');
 Route::get('/list-records', [App\Http\Controllers\Api\RecordController::class, 'list'])->name('list.record');
+Route::post('/update-records', [App\Http\Controllers\Api\RecordController::class, 'update'])->name('update.record');
+Route::delete('/delete-record', [App\Http\Controllers\Api\RecordController::class, 'delete'])->name('delete.record');
